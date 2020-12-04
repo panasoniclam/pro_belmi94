@@ -20,6 +20,7 @@ bin-release/
 
 # dependencies
 /node_modules
+/src/scss
 /.pnp
 .pnp.js
 
