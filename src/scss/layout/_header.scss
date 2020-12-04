@@ -1,0 +1,39 @@
+.header{
+    width: 105rem;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 1rem 0;
+    margin:0 auto;
+    &__box{
+        margin:  2rem 0 !important;
+    }
+    &__primary-link{
+        text-decoration: none;
+        color: $color-primary-text;
+    }
+    &__primary-border-text{
+        &:link,&:visited{
+             font-size: 1.2rem !important;
+             border-radius:10%;
+             background-color: rgba($color-primary-text,.4);
+             padding:.6rem;
+             transition: all .2s;
+        }
+        &:hover{
+            background-color: rgba($color-primary-text,.2);
+        }
+    }
+    &__primary-text{
+        font-size: 1.6rem;
+        color: $color-primary-text;
+        float: left;
+        display: block;
+    }
+    &__primary-box{
+        float: right;
+
+       
+    }
+
+}
+ 

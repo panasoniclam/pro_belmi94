@@ -1,0 +1,32 @@
+.text-weight{
+    font-weight: 600;
+}
+.text-weight-light{
+    font-weight: 400;
+}
+
+.margin-right-small{
+    &:not(:last-child){
+        margin-right: 1.8rem;
+    }
+}
+.margin-right-medium{
+    &:not(:last-child){
+        margin-right: 3rem;
+    }
+}
+.margin-bottom-small{
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+}
+.margin-bottom-medium{
+    &:not(:last-child){
+        margin-bottom: 4rem;
+    }
+}
+.margin-bottom-medium-token{
+    &:not(:last-child){
+        margin-bottom: 4rem;
+    }
+}

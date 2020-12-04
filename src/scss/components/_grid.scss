@@ -1,0 +1,11 @@
+.row{
+    width: 100%;
+    margin: 0 auto;
+    .col-1-of-2{
+        &:not(:last-child){
+            margin-right: $grid-gutter;
+        }
+        float: left;
+        width: calc((100% - #{$grid-gutter})/2);
+    }
+}

@@ -1,0 +1,25 @@
+.input-token{
+    background-color: $color-primary;
+    padding: 1.5rem 13rem;
+    border-radius: .5rem;
+
+    padding-left: .6rem !important;
+    padding-right: 0rem !important;
+
+    &__text{
+        text-align: left !important;
+        width:100% !important;
+        resize: vertical;
+        background: $color-input-token !important;
+        border: 0 !important;
+        font-size: 1.6rem  !important;
+        &:hover,&:active{
+             border:.1rem solid $color-btn-box !important;
+        }
+        
+    }
+    &__number{
+
+    }
+
+}

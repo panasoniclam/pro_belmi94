@@ -1,0 +1,23 @@
+.browser{
+    border: .1rem solid $color-browser;
+    background-color: $color-browser;
+    height: 20vh;
+    margin: 0 auto;
+    width: 105rem;
+    border-radius: .5rem;
+    color: $color-primary !important;
+    &__box{
+        margin: 1.5rem;
+    }
+    &__primary--main{
+        color: $color-primary-text;
+        font-size: 2.75rem !important;
+        font-weight: 500;
+    }
+    &__primary--sub{
+        color: $color-primary-text;
+        font-size: 1.5rem !important;
+        font-weight: 500;
+    }
+    
+}

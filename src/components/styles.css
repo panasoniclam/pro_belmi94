@@ -1,0 +1,182 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 56.5em) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  background-color: #202229;
+  color: #ffffff; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.6rem !important;
+  padding: .8rem; }
+
+.btn:hover {
+  color: #e9ecef; }
+
+.btn-box:link, .btn-box:visited {
+  color: #178bb2 !important;
+  border-radius: .5rem;
+  border: 1px solid #178bb2;
+  padding: 1.2rem  1.7rem !important;
+  transition: all .2s; }
+
+.btn-box:hover {
+  background-color: #178bb2;
+  color: #ffffff !important; }
+
+.btn-icon:link, .btn-icon:visited {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: .5rem;
+  padding: 1.2rem  1.7rem !important;
+  transition: all .2s; }
+
+.btn-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.btn-browser:link, .btn-browser:visited {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border: 0.1rem solid #ffffff;
+  border-radius: .5rem;
+  color: #202229;
+  font-size: 1.5rem !important;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  transition: all .2s; }
+
+.btn-browser:hover {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.row {
+  width: 100%;
+  margin: 0 auto; }
+  .row .col-1-of-2 {
+    float: left;
+    width: calc((100% - 3rem)/2); }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 3rem; }
+
+.input-token {
+  background-color: #202229;
+  padding: 1.5rem 13rem;
+  border-radius: .5rem;
+  padding-left: .6rem !important;
+  padding-right: 0rem !important; }
+  .input-token__text {
+    text-align: left !important;
+    width: 100% !important;
+    resize: vertical;
+    background: #2d3238 !important;
+    border: 0 !important;
+    font-size: 1.6rem  !important; }
+    .input-token__text:hover, .input-token__text:active {
+      border: 0.1rem solid #178bb2 !important; }
+
+.text-weight {
+  font-weight: 600; }
+
+.text-weight-light {
+  font-weight: 400; }
+
+.margin-right-small:not(:last-child) {
+  margin-right: 1.8rem; }
+
+.margin-right-medium:not(:last-child) {
+  margin-right: 3rem; }
+
+.margin-bottom-small:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.margin-bottom-medium:not(:last-child) {
+  margin-bottom: 4rem; }
+
+.margin-bottom-medium-token:not(:last-child) {
+  margin-bottom: 4rem; }
+
+.browser {
+  border: 0.1rem solid #9d7542;
+  background-color: #9d7542;
+  height: 20vh;
+  margin: 0 auto;
+  width: 105rem;
+  border-radius: .5rem;
+  color: #202229 !important; }
+  .browser__box {
+    margin: 1.5rem; }
+  .browser__primary--main {
+    color: #ffffff;
+    font-size: 2.75rem !important;
+    font-weight: 500; }
+  .browser__primary--sub {
+    color: #ffffff;
+    font-size: 1.5rem !important;
+    font-weight: 500; }
+
+.token {
+  margin: 0 auto;
+  width: 105rem; }
+  .token__primary--main {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff; }
+  .token__primary--sub {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 300; }
+  .token-select {
+    padding: 1rem 2.3rem !important;
+    background: #202229 !important;
+    border-radius: .5rem !important;
+    color: #ffffff !important;
+    font-size: 2.2rem !important; }
+  .token-option {
+    color: #ffffff !important;
+    font-size: 1.5rem !important;
+    padding: 1rem 2rem !important;
+    height: 3rem !important; }
+
+.header {
+  width: 105rem;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 1rem 0;
+  margin: 0 auto; }
+  .header__box {
+    margin: 2rem 0 !important; }
+  .header__primary-link {
+    text-decoration: none;
+    color: #ffffff; }
+  .header__primary-border-text:link, .header__primary-border-text:visited {
+    font-size: 1.2rem !important;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: .6rem;
+    transition: all .2s; }
+  .header__primary-border-text:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .header__primary-text {
+    font-size: 1.6rem;
+    color: #ffffff;
+    float: left;
+    display: block; }
+  .header__primary-box {
+    float: right; }
