@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { Input,Select,InputNumber } from 'antd';
+ 
 import './styles.css';
+import 'antd/dist/antd.css';
+
+
+//component
+import Browser from  './Browser'
+const { Option } = Select;
 function Token() {
     const initialValue = [
         { id: 0, value: " --- Select a State ---" }];
@@ -37,15 +45,18 @@ function Token() {
         }
     ]
     return (
+        <div>
+            <Browser></Browser>
         <div className="token">
             <div className="margin-bottom-small">
                 <h1 className="token__primary--main margin-bottom-small">Token Builder</h1>
                 <label for="cars" className="token__primary--sub margin-right-small">Define, Deploy and Sell your own ERC20 Token on the</label>
-                <select className="token-select">
+                <Select  defaultValue="lucy" style={{ width:200, background:'#202229'}}>
                     {stateOptions.map((localState, index) => (
-                        <option className="token-option" key={localState.id}>{localState.value}</option>
+                        // <Option className="token-option" key={localState.id}>{localState.value}</Option>
+                        <Option  value={localState.value} key={localState.id}> {localState.value}</Option>
                     ))}
-                </select>
+                </Select>
             </div>
             <div className="row">
                 <div className="col-1-of-2">
@@ -53,21 +64,26 @@ function Token() {
                     {token.map(function (object, i) {
                         return (< div key={object.id} className="margin-bottom-small" >
                               <h4 className="token__primary--sub   ">{object.name}</h4>
-                              <input placeholder={object.tagInput}  type="text" className="margin-bottom-medium-token input-token input-token__text token__primary--sub"></input>
+                              <Input placeholder={object.tagInput} className="margin-bottom-medium-token input-token input-token__text token__primary--sub" />
                         </ div>);
                     })} 
                     {number.map(function (object, i) {
                         return (< div key={object.id} className="margin-bottom-small" >
                               <h4 className="token__primary--sub   ">{object.name}</h4>
-                              <input placeholder={object.tagInput}  type="text" className="margin-bottom-medium-token input-token input-token__text token__primary--sub"></input>
+                              <InputNumber  style={{color:'white'}} className="margin-bottom-medium-token input-token input-token__text token__primary--sub" min={1} max={10} defaultValue={3}   />
+                              {/* <input placeholder={object.tagInput}  type="text" className="margin-bottom-medium-token input-token input-token__text token__primary--sub"></input> */}
                         </ div>);
-                    })}   
-    
+                    })} 
                 </div>
-                <div className="col-1-of-2">
-                    test
+                <div className="col-1-of-2 token-hover">
+                <h1 className=" browser__primary--main margin-bottom-small">Advanced Options:</h1>
+                <h4 className="token__primary--sub   ">Enabling the features below, will increase the size of the token's smart-contract, slightly raising the cost of deployment.</h4>
                 </div>
             </div>
+        </div>
+          <div style={{ clear: 'both',
+        display: 'table',
+        content: ""}}></div>
         </div>
     )
 }

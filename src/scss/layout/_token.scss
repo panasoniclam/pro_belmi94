@@ -27,5 +27,11 @@
         height: 3rem !important;
         
     }
+    &-hover{
+        color: rgba($color-primary-text, $alpha: .7) !important;
+        &:hover{
+            color: $color-primary-text !important;
+        }
+    }
 
 }

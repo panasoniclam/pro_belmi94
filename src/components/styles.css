@@ -19,8 +19,8 @@ html {
       font-size: 75%; } }
 
 body {
-  background-color: #202229;
-  color: #ffffff; }
+  background-color: #202229 !important;
+  color: #ffffff !important; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -69,6 +69,10 @@ body {
 .row {
   width: 100%;
   margin: 0 auto; }
+  .row::after {
+    clear: both;
+    display: table;
+    content: ""; }
   .row .col-1-of-2 {
     float: left;
     width: calc((100% - 3rem)/2); }
@@ -77,7 +81,7 @@ body {
 
 .input-token {
   background-color: #202229;
-  padding: 1.5rem 13rem;
+  padding: 1.2rem 13rem;
   border-radius: .5rem;
   padding-left: .6rem !important;
   padding-right: 0rem !important; }
@@ -88,8 +92,6 @@ body {
     background: #2d3238 !important;
     border: 0 !important;
     font-size: 1.6rem  !important; }
-    .input-token__text:hover, .input-token__text:active {
-      border: 0.1rem solid #178bb2 !important; }
 
 .text-weight {
   font-weight: 600; }
@@ -153,13 +155,21 @@ body {
     font-size: 1.5rem !important;
     padding: 1rem 2rem !important;
     height: 3rem !important; }
+  .token-hover {
+    color: rgba(255, 255, 255, 0.7) !important; }
+    .token-hover:hover {
+      color: #ffffff !important; }
+
+.footer {
+  width: 105rem;
+  height: 10vh;
+  margin: 0 auto; }
 
 .header {
   width: 105rem;
   height: 10vh;
   margin: 0 auto;
-  padding: 1rem 0;
-  margin: 0 auto; }
+  padding: 1rem 0; }
   .header__box {
     margin: 2rem 0 !important; }
   .header__primary-link {
