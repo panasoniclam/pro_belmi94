@@ -106,13 +106,27 @@ body {
   margin-right: 3rem; }
 
 .margin-bottom-small:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .margin-bottom-medium:not(:last-child) {
   margin-bottom: 4rem; }
 
 .margin-bottom-medium-token:not(:last-child) {
   margin-bottom: 4rem; }
+
+.margin-left-small:not(:last-child) {
+  margin-left: 2rem; }
+
+.padding-left-small {
+  padding-left: 1rem !important; }
+
+.display-inline-block {
+  display: inline-block; }
+
+.clearfix {
+  clear: both;
+  display: table;
+  content: ""; }
 
 .browser {
   border: 0.1rem solid #9d7542;
@@ -136,6 +150,21 @@ body {
 .token {
   margin: 0 auto;
   width: 105rem; }
+  .token__image {
+    margin-top: 20rem;
+    height: 20rem;
+    width: 20rem; }
+  .token__primary--button {
+    padding: 2.4rem 10.3rem !important;
+    font-size: 1.6rem !important; }
+    .token__primary--button-1 {
+      background-color: #343a40 !important;
+      color: #ffffff !important;
+      padding: 1rem 8.35rem 4rem 11rem  !important; }
+    .token__primary--button-2 {
+      background-color: #178bb2 !important;
+      color: #ffffff !important;
+      padding: 1rem 10.35rem 4rem 11rem  !important; }
   .token__primary--main {
     font-size: 4rem;
     font-weight: 300;
@@ -144,9 +173,11 @@ body {
     font-size: 1.5rem;
     color: #ffffff;
     font-weight: 300; }
+  .token__primary--heading {
+    color: rgba(255, 255, 255, 0.4) !important; }
   .token-select {
     padding: 1rem 2.3rem !important;
-    background: #202229 !important;
+    background-color: #202229 !important;
     border-radius: .5rem !important;
     color: #ffffff !important;
     font-size: 2.2rem !important; }
@@ -155,15 +186,15 @@ body {
     font-size: 1.5rem !important;
     padding: 1rem 2rem !important;
     height: 3rem !important; }
-  .token-hover {
-    color: rgba(255, 255, 255, 0.7) !important; }
-    .token-hover:hover {
-      color: #ffffff !important; }
+  .token-hover:hover {
+    color: #ffffff !important; }
 
 .footer {
   width: 105rem;
   height: 10vh;
   margin: 0 auto; }
+  .footer__position {
+    float: right; }
 
 .header {
   width: 105rem;

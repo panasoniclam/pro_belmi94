@@ -1,6 +1,30 @@
 .token{
     margin: 0 auto;
     width: 105rem;
+    
+    &__image{
+        margin-top: 20rem;
+        height: 20rem;
+        width: 20rem;
+    }
+    
+    &__primary--button{
+        padding:2.4rem 10.3rem !important;
+        font-size: 1.6rem !important;
+        &-1{
+            background-color: $color-button-token-1 !important;
+            color: $color-primary-text !important;
+            padding:1rem 8.35rem 4rem 11rem  !important  ;
+        }
+        &-2{
+            background-color: $color-btn-box !important;
+            color: $color-primary-text !important;
+            padding:1rem 10.35rem 4rem 11rem  !important  ;
+
+        }
+
+
+    }
     &__primary--main{
         font-size: 4rem;
         font-weight: 300;
@@ -11,9 +35,12 @@
         color:$color-primary-text ;
         font-weight: 300;
     }
+    &__primary--heading{
+        color: rgba($color: $color-primary-text, $alpha: .4) !important;
+    }
     &-select{
         padding: 1rem 2.3rem !important;
-        background: $color-primary !important;
+        background-color: $color-primary !important;
         border-radius: .5rem !important;
         color: $color-primary-text !important;
         font-size: 2.2rem !important;
@@ -28,7 +55,7 @@
         
     }
     &-hover{
-        color: rgba($color-primary-text, $alpha: .7) !important;
+        // color: rgba($color-primary-text, $alpha: .7) !important;
         &:hover{
             color: $color-primary-text !important;
         }

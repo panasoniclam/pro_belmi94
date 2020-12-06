@@ -16,10 +16,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "compile:sass": "node-sass src/scss/main.scss src/components/styles.css -w ",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile:sass": "node-sass src/scss/main.scss src/components/styles.css -w"
   },
   "eslintConfig": {
     "extends": [

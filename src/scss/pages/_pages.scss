@@ -17,7 +17,7 @@
 }
 .margin-bottom-small{
     &:not(:last-child){
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
 .margin-bottom-medium{
@@ -29,4 +29,22 @@
     &:not(:last-child){
         margin-bottom: 4rem;
     }
+}
+.margin-left-small{
+    &:not(:last-child){
+       margin-left: 2rem;
+    }
+}
+.padding-left-small{
+   
+        padding-left: 1rem !important;
+   
+}
+.display-inline-block{
+    display: inline-block;
+}
+.clearfix{
+    clear: both;
+    display: table;
+    content: "";
 }
