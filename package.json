@@ -20,6 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "compile:sass": "node-sass src/scss/main.scss src/components/styles.css -w"
+    
+    
   },
   "eslintConfig": {
     "extends": [

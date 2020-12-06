@@ -4,8 +4,8 @@
     
     &__image{
         margin-top: 20rem;
-        height: 20rem;
-        width: 20rem;
+        height: 14rem;
+        width: 14rem;
     }
     
     &__primary--button{
@@ -14,12 +14,12 @@
         &-1{
             background-color: $color-button-token-1 !important;
             color: $color-primary-text !important;
-            padding:1rem 8.35rem 4rem 11rem  !important  ;
+            padding:1rem 5.35rem 4rem 9rem  !important  ;
         }
         &-2{
             background-color: $color-btn-box !important;
             color: $color-primary-text !important;
-            padding:1rem 10.35rem 4rem 11rem  !important  ;
+            padding:1rem 6.35rem 4rem 7em  !important  ;
 
         }
 

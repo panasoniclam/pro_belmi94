@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+"compile:sass": "node-sass src/scss/main.scss src/components/styles.css -w"
 ## Available Scripts
 
 In the project directory, you can run:

@@ -10,7 +10,7 @@ const route  =  [
     {
         path:'/',
         exact:true,
-        main:()=>{return(<Token/>)}
+        main:()=>{return(<Token id="lamnn8"/>)}
     },
     {
         path:'/download',

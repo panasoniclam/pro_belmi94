@@ -27,7 +27,8 @@ const showSwitch = option => {
         })
     }
 }
-function Token() {
+function Token(props) {
+
     const initialValue = [
         { id: 0, value: " --- Select a State ---" }];
     const allowedState = [
@@ -86,6 +87,15 @@ function Token() {
             content: "Allow your smart-contract to be paused, preventing transfers."
         }
     ]
+
+    const  [count,setCount ] = useState(0);
+    const innearCount = ()=>{
+        setCount(count +1)
+    }
+    useEffect(()=>{
+        console.log(`ban da click ${count}`)
+        console.log(props.id)
+    })
     return (
         <div>
             <Browser></Browser>
@@ -95,7 +105,6 @@ function Token() {
                     <label for="cars" className="token__primary--sub margin-right-small">Define, Deploy and Sell your own ERC20 Token on the</label>
                     <Select defaultValue="lucy" style={{ width: 200, background: '#202229' }} >
                         {stateOptions.map((localState, index) => (
-                            // <Option className="token-option" key={localState.id}>{localState.value}</Option>
                             <Option value={localState.value} key={localState.id}> {localState.value}</Option>
                         ))}
                     </Select>
@@ -113,26 +122,27 @@ function Token() {
                             return (< div key={object.id} className="margin-bottom-small" >
                                 <h4 className="token__primary--sub   ">{object.name}</h4>
                                 <InputNumber style={{ color: 'white' }} className="margin-bottom-medium-token input-token input-token__text token__primary--sub" min={1} max={10} defaultValue={3} />
-                                {/* <input placeholder={object.tagInput}  type="text" className="margin-bottom-medium-token input-token input-token__text token__primary--sub"></input> */}
                             </ div>);
                         })}
                         <h4 className="token__primary--sub   ">The Token's smart-contract uses the open-zepplin community vetted library.
                          Contracts are compiled with solidity v0.6.8. And can be verified on etherscan as "Solidity (Single File)".</h4>
-                        <Radio.Group value='large' onChange={onChange}>
-                            <Radio.Button value="large" className="token__primary--button token__primary--button-1">Large</Radio.Button>
-                            <Radio.Button value="default" className="token__primary--button token__primary--button-2">Default</Radio.Button>
-
+                        <Radio.Group value='large'  >
+                            <Radio.Button value="large" className="token__primary--button token__primary--button-1" onClick={innearCount}>Download Source</Radio.Button>
+                            <Radio.Button value="default" className="token__primary--button token__primary--button-2">Deploy Token</Radio.Button>
                         </Radio.Group>
                     </div>
                     <div className="col-1-of-2 token-hover">
                         <h1 className=" browser__primary--main margin-bottom-small">Advanced Options:</h1>
                         <h4 className="token__primary--sub   ">Enabling the features below, will increase the size of the token's smart-contract, slightly raising the cost of deployment.</h4>
                         {showSwitch(optionSwitch)}
-
                     </div>
                 </div> 
                 <div>
                 <img src={muted} className="token__image"/>
+                
+                <h1 className="token__primary--sub token__primary--heading  ">CoinMechanic is an online cryptocurrency creation and management tool.
+                 Utilize our fast, no-code token builder to create and deploy secure ERC20 smart-contracts.</h1>
+
             </div>
             </div>
            
